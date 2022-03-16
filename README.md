@@ -1,3 +1,9 @@
+**Tester Observation:**
+There is no accessebility locator for lap row, hence test step "VerifyLapsDisplay" has been partially done.  In practise I will work with developers to get this accessebility locator added with which I can get the full text from the row and verify lap time as well.
+
+With regards to e2e tests, I have added BDD style approach and wantedly split each and each into scenario individual as to show the scope of the project if it's a large application.
+
+
 PokerStars SEIT Native Technical Task 
 ==========
 
