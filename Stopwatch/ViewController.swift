@@ -37,6 +37,8 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     lapsTableView.delegate = self;
     lapsTableView.dataSource = self;
+      
+      timerLabel.accessibilityIdentifier = "timerLabel"
   }
   
   // MARK: - UI Settings

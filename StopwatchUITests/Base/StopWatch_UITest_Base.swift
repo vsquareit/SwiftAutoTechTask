@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import XCTest
+
+class StopWatch_UITest_Base: XCTestCase {
+    let app = XCUIApplication()
+        
+    override func setUp() {
+        super.setUp()
+
+        continueAfterFailure = false
+        UIView.setAnimationsEnabled(false)
+        app.launchArguments = ["NoAnimations"]
+        app.launch()
+    }
+    
+    override func tearDown() {
+        XCUIApplication().terminate()
+        super.tearDown()
+    }
+    
+}
